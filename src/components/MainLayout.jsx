@@ -1,17 +1,15 @@
-import { Outlet } from "react-router-dom";
-import Navs from "./Navs";
-import AppTitle from "./AppTitle";
+import { Outlet } from 'react-router-dom';
+import Navs from './Navs';
+import AppTitle from './AppTitle';
 const MainLayout = () => {
   return (
     <div>
-      <AppTitle/>
-      <Navs/>
+      <AppTitle />
+      <Navs />
 
-   
-
-      <Outlet/>
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;
