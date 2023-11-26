@@ -1,6 +1,6 @@
 
 
-import {useParams } from 'react-router-dom';
+import {useParams, Link } from 'react-router-dom';
 import { getShowById } from '../api/tvmaze';
 
 import { useQuery } from '@tanstack/react-query'
@@ -20,8 +20,7 @@ const Show = () => {
       refetchOnWindowFocus : false
     })
     
-    
-   
+  
     
     if(showError){
       return <div>We have an error : {showError.message}</div>
@@ -30,6 +29,7 @@ const Show = () => {
     if(showData) {
       return <div>
             
+            <Link to='/'> Go back to home page</Link>
          <ShowMainData image={showData.image} name={showData.name} rating={showData.rating} summary={showData.summary} genres={showData.genres}/>
          <div>
          <h2> Details</h2>
