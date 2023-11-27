@@ -29,7 +29,7 @@ const Show = () => {
     if(showData) {
       return <div>
             
-            <Link to='/'> Go back to home page</Link>
+            <Link to='/j'> Go back to home page</Link>
          <ShowMainData image={showData.image} name={showData.name} rating={showData.rating} summary={showData.summary} genres={showData.genres}/>
          <div>
          <h2> Details</h2>
