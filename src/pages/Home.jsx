@@ -49,6 +49,7 @@ const Home = () => {
       <SearchForm onSearch={onSearch}/>
      
       <div>{renderApiData()}</div>
+      
     </div>
   );
 };

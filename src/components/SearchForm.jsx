@@ -46,7 +46,10 @@ const SearchForm = ({onSearch}) => {
   </RadiosWrapper>
     
     <SearchButtonWrapper> <button type="submit">Search</button></SearchButtonWrapper>  
+    
   </form>
+  <DevelopedTag >Developed by <span>Tushyen Gotmare :)</span></DevelopedTag>
+  
   </>
   );
 }
@@ -97,3 +100,14 @@ const SearchButtonWrapper = styled.div`
     }
   }
 `;
+
+const DevelopedTag = styled.p`
+  text-align: center;
+  padding-top: 90px;
+  color: #8d8d8d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  span{
+    color: #0000fc8b;
+  }
+`
